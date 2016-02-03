@@ -59,7 +59,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES := \
     AdvancedDisplay \
     com.android.future.usb.accessory \
-    SamsungServiceMode
+    SamsungServiceMode \
+    Snap
 
 # Legacy RIL
 PRODUCT_PACKAGES += \
