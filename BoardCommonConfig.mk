@@ -146,7 +146,7 @@ WIFI_DRIVER_FW_PATH_P2P     := "/system/etc/wifi/bcmdhd_p2p.bin"
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
 BOARD_HAVE_SAMSUNG_BLUETOOTH := true
-BOARD_BLUEDROID_VENDOR_CONF := device/samsung/u1-common/bluetooth/vnd_smdk4210.txt
+BOARD_CUSTOM_BT_CONFIG := device/samsung/u1-common/bluetooth/vnd_smdk4210.txt
 
 # Selinux
 ifneq ($(filter u1ktt u1skt,$(TARGET_DEVICE)),)
