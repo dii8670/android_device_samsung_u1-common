@@ -64,7 +64,7 @@ PRODUCT_PACKAGES := \
 # Legacy RIL
 PRODUCT_PACKAGES += \
     libsamsung_symbols \
-    ril-wrapper
+    libsecril-shim
 
 # Audio Packages
 PRODUCT_PACKAGES += \
