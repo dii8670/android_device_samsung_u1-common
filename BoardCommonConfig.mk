@@ -83,7 +83,8 @@ TARGET_RELEASETOOLS_EXTENSIONS := ./device/samsung/u1-common/releasetools/extens
 endif
 
 # Hardware tunables
-BOARD_HARDWARE_CLASS := hardware/samsung/cmhw
+BOARD_HARDWARE_CLASS := hardware/samsung/cmhw \
+    device/samsung/u1-common/cmhw
 
 # Graphics
 BOARD_EGL_CFG := device/samsung/u1-common/configs/egl.cfg
