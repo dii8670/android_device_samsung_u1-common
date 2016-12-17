@@ -125,7 +125,6 @@ BOARD_RIL_CLASS := ../../../device/samsung/u1-common/ril
 BOARD_GLOBAL_CFLAGS += -DDISABLE_ASHMEM_TRACKING
 
 # Camera
-BOARD_USES_PROPRIETARY_LIBFIMC := true
 BOARD_CAMERA_HAVE_ISO := true
 
 # WiFi
