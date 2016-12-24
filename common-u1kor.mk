@@ -59,6 +59,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES := \
     AdvancedDisplay \
     com.android.future.usb.accessory \
+    SamsungDoze \
     SamsungServiceMode \
     Snap
 
