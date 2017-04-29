@@ -71,15 +71,15 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 2147467264
 BOARD_FLASH_BLOCK_SIZE := 4096
 
 # Releasetools
-TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := ./device/samsung/galaxys2-common/releasetools/galaxys2_ota_from_target_files
-TARGET_RELEASETOOL_IMG_FROM_TARGET_SCRIPT := ./device/samsung/galaxys2-common/releasetools/galaxys2_img_from_target_files
-TARGET_RELEASETOOLS_EXTENSIONS := ./device/samsung/galaxys2-common/releasetools/extensions
+TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := ./device/samsung/u1-common/releasetools/u1_ota_from_target_files
+TARGET_RELEASETOOL_IMG_FROM_TARGET_SCRIPT := ./device/samsung/u1-common/releasetools/u1_img_from_target_files
+TARGET_RELEASETOOLS_EXTENSIONS := ./device/samsung/u1-common/releasetools/extensions
 
 # Hardware tunables
 BOARD_HARDWARE_CLASS := hardware/samsung/cmhw
 
 # Graphics
-BOARD_EGL_CFG := device/samsung/galaxys2-common/configs/egl.cfg
+BOARD_EGL_CFG := device/samsung/u1-common/configs/egl.cfg
 BOARD_EGL_NEEDS_HANDLE_VALUE := true
 USE_OPENGL_RENDERER := true
 TARGET_REQUIRES_SYNCHRONOUS_SETSURFACE := true
@@ -112,7 +112,7 @@ BOARD_USE_YAMAHA_MC1N2_AUDIO := true
 # RIL
 BOARD_PROVIDES_LIBRIL := true
 BOARD_MODEM_TYPE := xmm6260
-BOARD_RIL_CLASS := ../../../device/samsung/galaxys2-common/ril
+BOARD_RIL_CLASS := ../../../device/samsung/u1-common/ril
 COMMON_GLOBAL_CFLAGS += -DDISABLE_ASHMEM_TRACKING
 
 # Camera
@@ -144,35 +144,35 @@ BOARD_HAVE_SAMSUNG_WIFI          := true
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
 BOARD_HAVE_SAMSUNG_BLUETOOTH := true
-BOARD_BLUEDROID_VENDOR_CONF := device/samsung/galaxys2-common/bluetooth/vnd_smdk4210.txt
+BOARD_BLUEDROID_VENDOR_CONF := device/samsung/u1-common/bluetooth/vnd_smdk4210.txt
 
 # Selinux
-BOARD_SEPOLICY_DIRS += device/samsung/galaxys2-common/selinux
+BOARD_SEPOLICY_DIRS += device/samsung/u1-common/selinux
 
 # Recovery
-BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/galaxys2-common/recovery/recovery_keys.c
-BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/galaxys2-common/recovery/graphics.c
+BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/u1-common/recovery/recovery_keys.c
+BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/u1-common/recovery/graphics.c
 BOARD_UMS_LUNFILE := "/sys/class/android_usb/android0/f_mass_storage/lun0/file"
 BOARD_USES_MMCUTILS := true
 BOARD_HAS_NO_MISC_PARTITION := true
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_SUPPRESS_EMMC_WIPE := true
 BOARD_RECOVERY_SWIPE := true
-TARGET_RECOVERY_FSTAB := device/samsung/galaxys2-common/rootdir/fstab.smdk4210
+TARGET_RECOVERY_FSTAB := device/samsung/u1-common/rootdir/fstab.smdk4210
 RECOVERY_FSTAB_VERSION := 2
 
 # Device specific headers
-TARGET_SPECIFIC_HEADER_PATH := device/samsung/galaxys2-common/include
+TARGET_SPECIFIC_HEADER_PATH := device/samsung/u1-common/include
 
 # Charging mode
 BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charging
 BOARD_BATTERY_DEVICE_NAME := "battery"
 BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_CHARGER_SHOW_PERCENTAGE := true
-BOARD_CUSTOM_BOOTIMG_MK := device/samsung/galaxys2-common/shbootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/samsung/u1-common/shbootimg.mk
 
 # Override healthd HAL
 BOARD_HAL_STATIC_LIBRARIES := libhealthd.exynos4
 
 # Use the non-open-source parts, if they're present
--include vendor/samsung/galaxys2-common/BoardConfigVendor.mk
+-include vendor/samsung/smdk4210-common/BoardConfigVendor.mk

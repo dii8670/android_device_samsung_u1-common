@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-COMMON_PATH := device/samsung/galaxys2-common
+COMMON_PATH := device/samsung/u1-common
 
 DEVICE_PACKAGE_OVERLAYS := $(COMMON_PATH)/overlay
 
@@ -57,6 +57,7 @@ PRODUCT_COPY_FILES += \
 
 # Packages
 PRODUCT_PACKAGES := \
+    AdvancedDisplay \
     com.android.future.usb.accessory \
     SamsungServiceMode
 
@@ -67,7 +68,6 @@ PRODUCT_PACKAGES += \
 
 # Audio Packages
 PRODUCT_PACKAGES += \
-    AdvancedDisplay \
     audio.primary.exynos4 \
     audio.a2dp.default \
     audio.r_submix.default \
@@ -208,4 +208,4 @@ TARGET_OMX_PATH := hardware/samsung/exynos/multimedia/openmax
 $(call inherit-product, hardware/samsung/exynos4210.mk)
 
 # Include non-open-source parts
-$(call inherit-product, vendor/samsung/galaxys2-common/common-vendor.mk)
+$(call inherit-product, vendor/samsung/smdk4210-common/common-vendor.mk)
