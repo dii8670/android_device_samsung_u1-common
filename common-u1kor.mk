@@ -15,7 +15,7 @@
 #
 COMMON_PATH := device/samsung/u1-common
 
-DEVICE_PACKAGE_OVERLAYS := $(COMMON_PATH)/overlay
+DEVICE_PACKAGE_OVERLAYS := $(COMMON_PATH)/overlay-u1kor
 
 # Rootdir
 PRODUCT_COPY_FILES := \
@@ -59,7 +59,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES := \
     AdvancedDisplay \
     com.android.future.usb.accessory \
-    SamsungDoze \
     SamsungServiceMode \
     Snap
 
