@@ -19,14 +19,14 @@ DEVICE_PACKAGE_OVERLAYS := $(COMMON_PATH)/overlay
 
 # Rootdir
 PRODUCT_COPY_FILES := \
-    $(COMMON_PATH)/rootdir/unified/fstab.smdk4210:root/fstab.smdk4210 \
-    $(COMMON_PATH)/rootdir/unified/init.smdk4210.usb.rc:root/init.smdk4210.usb.rc \
-    $(COMMON_PATH)/rootdir/unified/init.smdk4210.rc:root/init.smdk4210.rc \
-    $(COMMON_PATH)/rootdir/unified/ueventd.smdk4210.rc:root/ueventd.smdk4210.rc
+    $(COMMON_PATH)/rootdir/u1kor/fstab.smdk4210:root/fstab.smdk4210 \
+    $(COMMON_PATH)/rootdir/u1kor/init.smdk4210.usb.rc:root/init.smdk4210.usb.rc \
+    $(COMMON_PATH)/rootdir/u1kor/init.smdk4210.rc:root/init.smdk4210.rc \
+    $(COMMON_PATH)/rootdir/u1kor/ueventd.smdk4210.rc:root/ueventd.smdk4210.rc
 
 # Recovery rootdir
 PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/rootdir/unified/init.recovery.smdk4210.rc:root/init.recovery.smdk4210.rc
+    $(COMMON_PATH)/rootdir/u1kor/init.recovery.smdk4210.rc:root/init.recovery.smdk4210.rc
 
 # Netflix hack
 PRODUCT_COPY_FILES += \
